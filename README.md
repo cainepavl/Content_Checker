@@ -2,6 +2,21 @@
 
 A Python script that monitors a CSV file and sends email alerts when data is detected. Designed to run as a scheduled task on PythonAnywhere.
 
+## Table of Contents
+
+- [Features](#features)
+- [Requirements](#requirements)
+- [Installation](#installation)
+- [Configuration](#configuration)
+- [Usage](#usage)
+- [How It Works](#how-it-works)
+- [Email Alert Format](#email-alert-format)
+- [File Structure](#file-structure)
+- [Customization](#customization)
+- [Security Notes](#security_notes)
+- [License](#license)
+- [Support](#support)
+
 ## Features
 
 - Checks if `database.csv` contains any data rows
