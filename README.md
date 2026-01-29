@@ -13,7 +13,7 @@ A Python script that monitors a CSV file and sends email alerts when data is det
 - [Email Alert Format](#email-alert-format)
 - [File Structure](#file-structure)
 - [Customization](#customization)
-- [Security Notes](#security_notes)
+- [Security Notes](#security-notes)
 - [License](#license)
 - [Support](#support)
 
