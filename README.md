@@ -1,8 +1,14 @@
-# CSV Database Alert Script
+# 📊 CSV Database Alert Script
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Python 3.6+](https://img.shields.io/badge/python-3.6%2B-blue.svg)]()
+[![Platform](https://img.shields.io/badge/platform-PythonAnywhere-informational.svg)]()
 
 A Python script that monitors a CSV file and sends email alerts when data is detected. Designed to run as a scheduled task on PythonAnywhere.
 
-## Table of Contents
+---
+
+## 📋 Table of Contents
 
 - [Features](#features)
 - [Requirements](#requirements)
@@ -11,36 +17,57 @@ A Python script that monitors a CSV file and sends email alerts when data is det
 - [Usage](#usage)
 - [How It Works](#how-it-works)
 - [Email Alert Format](#email-alert-format)
+- [Troubleshooting](#troubleshooting)
 - [File Structure](#file-structure)
 - [Customization](#customization)
 - [Security Notes](#security-notes)
 - [License](#license)
-- [Support](#support)
+- [Contact/Connect](#contactconnect)
 
-## Features
+---
+
+## ✨ Features
 
 - Checks if `database.csv` contains any data rows
 - Sends email alerts when data is found
 - Counts and reports the number of records
 - Easy to configure and schedule
 
-## Requirements
+---
+
+## ⬇️ Requirements
 
 - Python 3.6 or higher
 - Access to an email account with SMTP support
 - PythonAnywhere account (or any server that can run scheduled Python scripts)
 
-## Installation
+---
 
-1. Download the script to your PythonAnywhere account or local machine
-2. Ensure `database.csv` is in the same directory as the script
-3. Install Python (usually pre-installed on PythonAnywhere)
+## 🛠️ Installation
 
-No additional Python packages are required - the script uses only standard library modules.
+### 🐍 Verify Python
 
-## Configuration
+```bash
+python3 --version
+# Requires Python 3.6+
+```
 
-Before running the script, you need to configure the email settings. Open the script and modify these variables:
+### 📥 Clone or Download
+
+```bash
+git clone https://github.com/cainepavl/Content_Checker.git
+cd Content_Checker
+```
+
+No additional Python packages are required — the script uses only standard library modules.
+
+Ensure `database.csv` is in the same directory as the script before your first run.
+
+---
+
+## ⚙️ Configuration
+
+Before running the script, configure the email settings. Open the script and modify these variables:
 
 ```python
 CSV_FILE = 'database.csv'              # Path to your CSV file
@@ -70,7 +97,9 @@ For other email providers, update the SMTP settings:
 - **Yahoo**: `smtp.mail.yahoo.com`, port 587
 - **Custom domain**: Check your provider's SMTP settings
 
-## Usage
+---
+
+## 🚀 Usage
 
 ### Running Manually
 
@@ -101,7 +130,9 @@ You can schedule the task to run:
 - **Daily**: At a specific time each day
 - **Custom**: Using cron syntax for more control
 
-## How It Works
+---
+
+## 🔍 How It Works
 
 1. **File Check**: The script looks for `database.csv` in the specified location
 2. **Data Detection**: It reads the CSV and counts rows (excluding the header)
@@ -109,7 +140,9 @@ You can schedule the task to run:
 4. **Email Content**: The email includes the number of records found
 5. **Logging**: Status messages are printed (visible in PythonAnywhere logs)
 
-## Email Alert Format
+---
+
+## 📬 Email Alert Format
 
 When data is detected, you'll receive an email with:
 
@@ -117,7 +150,9 @@ When data is detected, you'll receive an email with:
 - **Body**: Number of records found and file location
 - **Timestamp**: Automatically included by your email client
 
-## Troubleshooting
+---
+
+## 🔍 Troubleshooting
 
 ### No Email Received
 
@@ -144,7 +179,9 @@ When data is detected, you'll receive an email with:
 - Verify the path to your script is correct
 - Ensure you're using `python3` (not just `python`)
 
-## File Structure
+---
+
+## 🗂️ File Structure
 
 ```
 your_directory/
@@ -152,7 +189,9 @@ your_directory/
 └── database.csv           # Your CSV file to monitor
 ```
 
-## Customization
+---
+
+## 🔧 Customization
 
 You can easily customize the script:
 
@@ -161,20 +200,27 @@ You can easily customize the script:
 - **Add attachments**: Extend the script to attach the CSV file to the email
 - **Multiple recipients**: Change `RECIPIENT_EMAIL` to a comma-separated list
 
-## Security Notes
+---
+
+## 🔒 Security Notes
 
 - Never commit files containing passwords to version control
 - Use environment variables for sensitive information in production
 - Keep your app passwords secure and don't share them
 - Regularly rotate your app passwords
 
-## License
+---
+
+## 📄 License
 
 This script is provided as-is for personal and commercial use.
 
-## Support
+---
 
-For issues related to:
-- **PythonAnywhere**: Check their help documentation
-- **Email setup**: Consult your email provider's SMTP documentation
-- **Script modifications**: Review the inline comments in the code
+## 📩 Contact/Connect
+
+**Caine Pavlosky**
+
+* Email: [cainepavl@outlook.com](mailto:cainepavl@outlook.com)
+* Portfolio: [fairdinkumstudios.com](https://fairdinkumstudios.com/)
+* LinkedIn: [linkedin.com/in/cainepavlosky008](https://linkedin.com/in/cainepavlosky008)
